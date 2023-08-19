@@ -41,7 +41,7 @@ def set_openai_api_key():
     openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
-def get_completion(prompt: str, is_chat_model=True, is_return_total_tokens=False, stop=None) -> Union[str,Tuple[str, float]]:
+def misc_get_completion(prompt: str, is_chat_model=True, is_return_total_tokens=False, stop=None) -> Union[str,Tuple[str, float]]:
     """
     Generates text given a prompt.
     is_chat_model (bool): uses GPT-3.5-TURBO if True, DAVINCI-002 otherwise.

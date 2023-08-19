@@ -1,9 +1,12 @@
 """
 A script to evaluate a submission json file given reference json file.
 """
+import sys
+sys.path.append("/Users/arnelcatangay/Documents/GitHub/llm_challenge_main")
+
 import argparse
 from pathlib import Path
-from llm_challenge.utils.evaluation import evaluate_submission
+from llm_challenge.evaluation import evaluate_submission
 from llm_challenge.utils.misc import write_dict_to_json
 
 
